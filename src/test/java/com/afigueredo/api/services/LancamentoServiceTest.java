@@ -6,9 +6,11 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Optional;
 
+import com.afigueredo.api.entities.Lancamento;
+import com.afigueredo.api.repositories.LancamentoRepository;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +20,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import com.afigueredo.api.entities.Lancamento;
-import com.afigueredo.api.repositories.LancamentoRepository;
 
 //@RunWith(SpringRunner.class) --- Não necessário no Spring 2
 @SpringBootTest

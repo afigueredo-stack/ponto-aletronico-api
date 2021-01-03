@@ -5,19 +5,17 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.Optional;
 
+import com.afigueredo.api.entities.Empresa;
+import com.afigueredo.api.repositories.EmpresaRepository;
+
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import com.afigueredo.api.entities.Empresa;
-import com.afigueredo.api.repositories.EmpresaRepository;
 
 //@RunWith(SpringRunner.class) --- Não necessário no Spring 2
 @SpringBootTest

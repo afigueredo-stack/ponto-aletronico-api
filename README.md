@@ -11,9 +11,19 @@ A API RESTful de Ponto Inteligente contém as seguintes características:
 * Caching com EhCache
 * Integração contínua com TravisCI
 ### Como executar a aplicação
+Projeto alterado para rodar usando o Spring 2
 Certifique-se de ter o Maven instalado e adicionado ao PATH de seu sistema operacional, assim como o Git.
 ```
-git clone https://github.com/m4rciosouza/ponto-inteligente-api.git
+git clone https://github.com/afigueredo-stack/ponto-aletronico-api
+cd ponto-inteligente-api
+Configure a porta e nome do banco de dados em application.properties
+mvn spring-boot:run
+Acesse os endpoints através da url http://localhost:8080
+```
+### Como executar a aplicação
+Certifique-se de ter o Maven instalado e adicionado ao PATH de seu sistema operacional, assim como o Git.
+```
+git clone https://github.com/afigueredo-stack/ponto-aletronico-api
 cd ponto-inteligente-api
 mvn spring-boot:run
 Acesse os endpoints através da url http://localhost:8080

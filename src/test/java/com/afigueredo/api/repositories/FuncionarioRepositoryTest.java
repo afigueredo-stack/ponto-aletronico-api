@@ -5,19 +5,17 @@ import static org.junit.Assert.assertNotNull;
 
 import java.security.NoSuchAlgorithmException;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import com.afigueredo.api.entities.Empresa;
 import com.afigueredo.api.entities.Funcionario;
 import com.afigueredo.api.enums.PerfilEnum;
 import com.afigueredo.api.utils.PasswordUtils;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 //@RunWith(SpringRunner.class) --- Não necessário no Spring 2
 @SpringBootTest

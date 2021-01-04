@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/m4rciosouza/ponto-inteligente-api.svg?branch=master)](https://travis-ci.org/m4rciosouza/ponto-inteligente-api)
+[![Build Status](https://travis-ci.com/github/afigueredo-stack/ponto-aletronico-api.svg?branch=master)](https://travis-ci.com/github/afigueredo-stack/ponto-aletronico-api)
 # Ponto Inteligente
 API do sistema de ponto inteligente com Java e Spring Boot.
 ### Detalhes da API RESTful

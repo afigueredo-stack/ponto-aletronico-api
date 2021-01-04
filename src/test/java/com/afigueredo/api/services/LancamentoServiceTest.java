@@ -9,8 +9,8 @@ import java.util.Optional;
 import com.afigueredo.api.entities.Lancamento;
 import com.afigueredo.api.repositories.LancamentoRepository;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,7 @@ public class LancamentoServiceTest {
 	@Autowired
 	private LancamentoService lancamentoService;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		BDDMockito.given(this.lancamentoRepository.findByFuncionarioId(Mockito.anyLong(), Mockito.any(PageRequest.class)))
 				.willReturn(new PageImpl<Lancamento>(new ArrayList<Lancamento>()));

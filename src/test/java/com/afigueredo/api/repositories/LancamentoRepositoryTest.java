@@ -13,9 +13,9 @@ import com.afigueredo.api.enums.PerfilEnum;
 import com.afigueredo.api.enums.TipoEnum;
 import com.afigueredo.api.utils.PasswordUtils;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
@@ -38,7 +38,7 @@ public class LancamentoRepositoryTest {
 
 	private Long funcionarioId;
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		Empresa empresa = this.empresaRepository.save(obterDadosEmpresa());
 
@@ -49,7 +49,7 @@ public class LancamentoRepositoryTest {
 		this.lancamentoRepository.save(obterDadosLancamentos(funcionario));
 	}
 
-	@After
+	@AfterEach
 	public void tearDown() throws Exception {
 		this.empresaRepository.deleteAll();
 	}

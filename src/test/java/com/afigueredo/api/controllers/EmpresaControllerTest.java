@@ -9,7 +9,7 @@ import java.util.Optional;
 import com.afigueredo.api.entities.Empresa;
 import com.afigueredo.api.services.EmpresaService;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.mockito.BDDMockito;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
